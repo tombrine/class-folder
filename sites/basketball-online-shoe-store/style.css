@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "inter";
+}
+
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+}
+
+.header-with-choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-without-choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 500px;
+  margin-top: 10px;
+  font-size: 15px;
+  height: 60px;
+  width: auto;
+  color: black;
+}
+
+.logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+  height: 20px;
+  width: auto;
+}
+
+.logo a {
+  color: black;
+  transition: 0.3s;
+}
+
+.logo a:hover {
+  transform: scale(1.2);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+}
+
+.puma,
+.nike,
+.adidas,
+.jordan,
+.sneakers {
+  color: black;
+  transition: 0.3s;
+}
+
+.adidas:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.puma:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.nike:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.jordan:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.sneakers:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+}
+
+.search-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+}
+
+.search input {
+  width: 150px;
+  height: 30px;
+  border: 1px solid rgba(250, 250, 255);
+  border-radius: 20px;
+  padding: 5px;
+  height: 35px;
+  position: relative;
+  padding-left: 38px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search-btn,
+input {
+  border: 1px solid rgba(250, 250, 255);
+  background-color: rgba(250, 250, 255);
+}
+
+.search-t {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.search-btn {
+  border-radius: 50%;
+  height: 35px;
+  position: absolute;
+  z-index: 1;
+  transition: 0.1s;
+}
+
+.basket-btn {
+  background-color: #fff;
+  border: 1px solid #fff;
+  height: 40px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  background-color: rgba(210, 210, 215);
+  border: 1px solid rgba(210, 210, 215);
+  cursor: pointer;
+}
+
+.search-1:hover .search-t {
+  background-color: rgba(220, 220, 225);
+}
+
+.search-1 input:hover {
+  background-color: rgba(235, 235, 240);
+}
+
+.basket-btn:hover {
+  background-color: rgba(210, 210, 215);
+  border: 1px solid rgba(210, 210, 215);
+  cursor: pointer;
+}
+
+.first-img {
+  height: 711.109px;
+  width: auto;
+  margin-bottom: 36px;
+}
+
+.slogan-shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan-shop p {
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.slogan {
+  font-family: "Antonio";
+  font-size: 80px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.slogan-shop button {
+  border: 1px solid black;
+  border-radius: 20px;
+  color: #fff;
+  background-color: black;
+  font-family: inherit;
+  text-align: center;
+  height: 36px;
+  width: 79px;
+  font-size: 17px;
+}
+
+.slogan-shop button:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.puma:hover ~ .Puma-choice,
+.Puma-choice:hover {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.puma-borad:hover .Puma-choice {
+  display: flex;
+  flex-direction: column;
+}
+
+.Puma-choice {
+  height: 250px;
+  width: auto;
+  display: none;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  padding-bottom: 45px;
+  transition: 0.3s;
+}
+
+.Men-puma {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Men-puma a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.Puma-choice ul :nth-child(1) {
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1.5px solid black;
+  padding: 1px;
+  color: black;
+}
+
+.Women-puma {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Women-puma a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.Kid-puma {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Kid-puma a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.Accessories-puma {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Accessories-puma a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.Collection-puma {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Collection-puma a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.Puma-choice a:hover {
+  color: black;
+}

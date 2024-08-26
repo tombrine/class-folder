@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Comic Neue";
+  font-weight: 700;
+  background-color: aquamarine;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+.btns {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+#rock,
+#paper,
+#scissors {
+  border-radius: 50%;
+  font-size: 7.5rem;
+  min-width: 160px;
+  transition: 0.3s;
+}
+
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.outputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#playerOutput,
+#computerOutput {
+  height: 300px;
+  width: 600px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 1px;
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#click_to {
+  width: 1202px;
+  height: 35px;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+#click_to:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.scores {
+  display: flex;
+  gap: 100px;
+}
+
+#playerScore {
+  border: 2px solid black;
+  height: 150px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: green;
+}
+
+#computerScore {
+  border: 2px solid black;
+  height: 150px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+#winner {
+  font-weight: 800;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#game_over,
+#game_over1 {
+  position: fixed;
+  left: 0;
+  top: -100%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#game_over a,
+#game_over1 a {
+  font-size: 70px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+#game_over div:hover,
+#game_over1 div:hover {
+  transform: scale(1.05);
+}
+
+#game_over div,
+#game_over1 div {
+  transition: 0.3s;
+}
+
+#game_over.shown {
+  top: 0;
+}
+
+#game_over1.shown1 {
+  top: 0;
+}

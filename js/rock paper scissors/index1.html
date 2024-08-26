@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="game_over">
+      <p>GAME OVER</p>
+      <p>YOU LOST 😔</p>
+      <div>
+        <a href="./index.html">PLAY AGAIN</a>
+      </div>
+    </div>
+
+    <div id="game_over1">
+      <p>GAME OVER</p>
+      <p>YOU WON 🏆</p>
+      <div>
+        <a href="./index.html">PLAY AGAIN</a>
+      </div>
+    </div>
+
+    <h1>Rock paper scissors</h1>
+
+    <div class="btns">
+      <button id="rock">👊🏾</button>
+      <button id="paper">🖐🏾</button>
+      <button id="scissors">✌🏾</button>
+    </div>
+
+    <div class="outputs">
+      <div style="display: flex; gap: 1px">
+        <div id="playerOutput"></div>
+        <div id="computerOutput"></div>
+      </div>
+      <div id="click_to">CLICK TO CONTINEU</div>
+    </div>
+
+    <div class="scores">
+      <div>
+        <h1>Player</h1>
+        <div id="playerScore"></div>
+      </div>
+      <div id="winner"></div>
+      <div>
+        <h1>Computer</h1>
+        <div id="computerScore"></div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
