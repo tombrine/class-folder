@@ -328,3 +328,311 @@ input {
 .Puma-choice a:hover {
   color: black;
 }
+
+.adidas:hover ~ .adidas-choice,
+.adidas-choice:hover {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.adidas-borad:hover .adidas-choice {
+  display: flex;
+  flex-direction: column;
+}
+
+.adidas-choice {
+  height: 250px;
+  width: auto;
+  display: none;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  padding-bottom: 45px;
+  transition: 0.3s;
+}
+
+.Men-adidas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Men-adidas a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.adidas-choice ul :nth-child(1) {
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1.5px solid black;
+  padding: 1px;
+  color: black;
+}
+
+.Women-adidas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Women-adidas a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.Kid-adidas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Kid-adidas a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.Accessories-adidas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Accessories-adidas a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.Collection-adidas{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Collection-adidas a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.adidas-choice a:hover {
+  color: black;
+}
+
+.jordan:hover ~ .jordan-choice,
+.jordan-choice:hover {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.jordan-borad:hover .jordan-choice {
+  display: flex;
+  flex-direction: column;
+}
+
+.jordan-choice {
+  height: 250px;
+  width: auto;
+  display: none;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  padding-bottom: 45px;
+  transition: 0.3s;
+}
+
+.Men-jordan {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Men-jordan a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.jordan-choice ul :nth-child(1) {
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1.5px solid black;
+  padding: 1px;
+  color: black;
+}
+
+.Women-jordan {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Women-jordan a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.Kid-jordan {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Kid-jordan a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.Accessories-jordan {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Accessories-jordan a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.Collection-jordan {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Collection-jordan a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.jordan-choice a:hover {
+  color: black;
+}
+
+.nike:hover ~ .nike-choice,
+.nike-choice:hover {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.nike-borad:hover .nike-choice {
+  display: flex;
+  flex-direction: column;
+}
+
+.nike-choice {
+  height: 250px;
+  width: auto;
+  display: none;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  padding-bottom: 45px;
+  transition: 0.3s;
+}
+
+.Men-nike {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Men-nike a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.nike-choice ul :nth-child(1) {
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1.5px solid black;
+  padding: 1px;
+  color: black;
+}
+
+.Women-nike {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Women-nike a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.Kid-nike {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Kid-nike a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.Accessories-nike {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Accessories-nike a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.Collection-nike {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.Collection-nike a {
+  color: #737272;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+
+.nike-choice a:hover {
+  color: black;
+}
+
+
