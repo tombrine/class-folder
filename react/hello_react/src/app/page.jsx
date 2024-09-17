@@ -1,41 +1,70 @@
+"use client";
+import { useEffect, useState } from "react";
 import { ProductCard } from "./componenets/product-card";
 
-export default async function Home() {
-  const response = await fetch("https://dummyjson.com/products");
-  const data = await response.json();
-  const { products } = data;
+export default function Home() {
+  const [skipCount, setSkipCount] = useState(1);
+  const [allProducts, setAllProducts] = useState([]);
+  const [allCategories, setAllCategories] = useState([]);
+  const [select, setSelect] = useState();
+  const limit = 30;
+  const fetchProducts = async () => {
+    const response = await fetch(
+      `https://dummyjson.com/product?limit=${limit}&skip=${skipCount * limit}`
+    );
+    const data = await response.json();
+    const { products } = data;
+    setAllProducts(products);
 
-  const responseCategory = await fetch(
-    "https://dummyjson.com/products/categories"
-  );
-  const categories = await responseCategory.json();
+    const responseCategory = await fetch(
+      `https://dummyjson.com/products/category-list/`
+    );
+    const categories = await responseCategory.json();
+    setAllCategories(categories);
+  };
+
+  const btnIncrease = () => setSkipCount(skipCount + 1);
+  const btnDecrease = () => {
+    if (skipCount == 1) return;
+    setSkipCount(skipCount - 1);
+  };
+
+  useEffect(() => {
+    console.log(skipCount);
+    fetchProducts();
+  }, [skipCount]);
 
   return (
     <main>
       <section>
         <div className="container">
-          <select name="" id="">
-            {categories.map((category) => (
-              <option key={category} value="">
-                {category.name}
+          <select
+            name=""
+            id=""
+            value={select}
+            onChange={(e) => {
+              setSelect(e.target.value);
+            }}
+          >
+            {allCategories.map((category) => (
+              <option key={category} value={category}>
+                {category}
               </option>
             ))}
           </select>
+
           <div className="row">
-            {products.map((product) => (
+            {allProducts.map((product) => (
               <div key={product.id}>
                 <ProductCard product={product} />
               </div>
             ))}
           </div>
+
           <div className="btns">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
+            <button onClick={btnDecrease}>{"<"}</button>
+            <h1>{skipCount}</h1>
+            <button onClick={btnIncrease}>{">"}</button>
           </div>
         </div>
       </section>

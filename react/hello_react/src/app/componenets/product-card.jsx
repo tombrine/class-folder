@@ -12,8 +12,9 @@ export const ProductCard = (props) => {
         <h3 className="product-title">{product.title}</h3>
         <p className="product-price">${product.price}</p>
         <p className="product-description">{product.description}</p>
+        <p className="product-category">Category: {product.category}</p>
         <a href="#" className="product-button">
-          Read more
+          Buy
         </a>
       </div>
     </div>
